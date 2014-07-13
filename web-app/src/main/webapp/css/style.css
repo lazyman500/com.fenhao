@@ -1,0 +1,9 @@
+#clipper-bd {
+	display: inline-block;
+	height: 67px;
+	font-size: 0;
+	width: 261px;
+	background: url("images/web-clipper.png");
+	background-position: 0px -132px;
+	line-height: 45px;
+}
