@@ -25,8 +25,11 @@
         var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
         if (isChrome) {
         	$("#chrome-b").css('display','inline-block'); 
+        	$("#demo-ie").remove(); 
         } else {
-       		$("#ie-b").css('display','inline-block'); 
+       		$("#ie-b").css('display','inline-block');
+        	$("#demo-chrome").remove(); 
+
         }
     	}); 
 	
@@ -160,7 +163,9 @@
 		
             </div>
             <div ng-controller="index_carousel_ctrl" class="index-banner-carousel ng-scope">
-            	  <img src="img/demo_chrome.gif" alt="video"  width="458" height="281	">
+            	  <img id="demo-chrome"    src="img/demo_chrome.gif" alt="video"  width="458" height="281	">
+            	  <img id="demo-ie"   src="img/demo_ie.gif" alt="video"  width="458" height="281	">
+            	  
             	<!--  
                 <video controls="" height="281" poster="/img/index/index_video.png" preload="auto" width="458">
                     <source src="https://dn-wt-video.qbox.me/worktile-for-teamwork.mp4" type="video/mp4">
