@@ -16,7 +16,7 @@ public class Processor {
                 new Acceeser().keepLogin();
                 System.out.println(format.format(new Date()));
             }
-        }, 1, 10, TimeUnit.SECONDS);
+        }, 1, 15, TimeUnit.MINUTES);
 
     }
 
